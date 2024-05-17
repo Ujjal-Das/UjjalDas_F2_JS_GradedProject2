@@ -64,7 +64,8 @@ function setElementHref(id, href, text) {
 function injectBasicInfo(basics) {
     setElementText('name', basics.name || 'Not Available');
     setElementText('appliedFor', basics.AppliedFor || 'Not Specified');
-    setElementSrc('profilePicture', basics.image || 'media/avatar.png');
+    // setElementSrc('profilePicture', basics.image || 'media/avatar.png'); Update : Github not tracking media folders. 
+    setElementSrc('profilePicture', basics.image || 'avatar.png'); 
     setElementText('email', 'Email: ' + (basics.email || 'No Email Provided'));
     setElementText('phone', 'Phone Number:' + (basics.phone || 'No Phone Provided'));
     setElementText('location', 'Location: ' + formatLocation(basics.location));
